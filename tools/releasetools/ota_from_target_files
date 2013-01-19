@@ -415,10 +415,10 @@ def WriteFullOTAPackage(input_zip, output_zip):
   script.print("*|   __   |  \\     /   |  |\\  \\  | |      *");
   script.print("*|  (__)  |___)   (___/   |_)  \\_| |_____ *");
   script.print("*                                         *");
-  sprint.print("*******************************************");
-  sprint.print(" ");
+  script.print("*******************************************");
+  script.print(" ");
   script.print(" Brought to your Galaxy S3 by:");
-  sprint.print(" ");
+  script.print(" ");
   script.print("*     )                                *");
   script.print("*  ( /(  (                 )     (     *");
   script.print("*  )\\()) )\\             ( /((    )\\ )  *");
