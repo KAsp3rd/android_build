@@ -407,28 +407,29 @@ def WriteFullOTAPackage(input_zip, output_zip):
   if OPTIONS.wipe_user_data:
     script.FormatPartition("/data")
 
-  script.print("*******************************************");
-  script.print("*____  _______     ___     _    _     ___ *");
-  script.print("*   /  \\      )   (   \\   | )  / |    \\   *");
-  script.print("*  /    \\    /     \   |  |/  /  | ()  )  *");
-  script.print("* /  ()  \\  (       )  |     (   |  __/   *");
-  script.print("*|   __   |  \\     /   |  |\\  \\  | |      *");
-  script.print("*|  (__)  |___)   (___/   |_)  \\_| |_____ *");
-  script.print("*                                         *");
-  script.print("*******************************************");
-  script.print(" ");
-  script.print(" Brought to your Galaxy S3 by:");
-  script.print(" ");
-  script.print("*     )                                *");
-  script.print("*  ( /(  (                 )     (     *");
-  script.print("*  )\\()) )\\             ( /((    )\\ )  *");
-  script.print("* ((_)((((_)(  (  `  )  )\\())(  (()/(  *");
-  script.print("* _ ((_)\\ _ )\\ )\\ /(/( ((_)(()\\  ((_)) *");
-  script.print("*| |/ /(_)_\\(_((_((_)_|__ (_((_) _| |  *");
-  script.print("*| ' <  / _ \\ (_-| '_ \\|_ \\| '_/ _` |  *");
-  script.print("*|_|\\_\\/_/ \\_\/__| .__|___/|_| \\__,_|  *");
-  script.print("*                |_|                   *");
-  script.print(" ");
+  script.Print("****************************************");
+  script.Print("*   ______  _____   __  __   ____      *");
+  script.Print("*  /\\  _  \\/\\  __`\\/\\ \\/\\ \\ /\\  _`\    *");
+  script.Print("*  \\ \\ \\L\\ \\ \\ \\/\\ \\ \\ \\/'/'\\ \\ \\L\\ \\  *");
+  script.Print("*   \\ \\  __ \\ \\ \\ \\ \\ \\ , <  \\ \\ ,__/  *");
+  script.Print("*    \\ \\ \\/\\ \\ \\ \\_\\ \\ \\ \\\\`\\ \\ \\ \\/   *");
+  script.Print("*     \\ \\_\\ \\_\\ \\_____\\ \\_\\ \\_\\\\ \\_\\   *");
+  script.Print("*      \\/_/\\/_/\\/_____/\\/_/\\/_/ \\/_/   *");
+  script.Print("*                                      *");
+  script.Print("****************************************");
+  script.Print(" ");
+  script.Print(" Brought to your Galaxy S3 by:");
+  script.Print(" ");
+  script.Print("*     )                                *");
+  script.Print("*  ( /(  (                 )     (     *");
+  script.Print("*  )\\()) )\\             ( /((    )\\ )  *");
+  script.Print("* ((_)((((_)(  (  `  )  )\\())(  (()/(  *");
+  script.Print("* _ ((_)\\ _ )\\ )\\ /(/( ((_)(()\\  ((_)) *");
+  script.Print("*| |/ /(_)_\\(_((_((_)_|__ (_((_) _| |  *");
+  script.Print("*| ' <  / _ \\ (_-| '_ \\|_ \\| '_/ _` |  *");
+  script.Print("*|_|\\_\\/_/ \\_\/__| .__|___/|_| \\__,_|  *");
+  script.Print("*                |_|                   *");
+  script.Print(" ");
 
   if "selinux_fc" in OPTIONS.info_dict:
     WritePolicyConfig(OPTIONS.info_dict["selinux_fc"], output_zip)
