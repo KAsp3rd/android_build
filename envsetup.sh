@@ -60,11 +60,12 @@ function check_product()
         return
     fi
 
-    if (echo -n $1 | grep -q -e "^cm_") ; then
-       CM_BUILD=$(echo -n $1 | sed -e 's/^cm_//g')
+    if (echo -n $1 | grep -q -e "^aokp_") ; then
+       AOKP_BUILD=$(echo -n $1 | sed -e 's/^aokp_//g')
     else
-       CM_BUILD=
+       AOKP_BUILD=
     fi
+      export AOKP_BUILD
 
     CALLED_FROM_SETUP=true BUILD_SYSTEM=build/core \
         TARGET_PRODUCT=$1 \
